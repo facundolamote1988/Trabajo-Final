@@ -1,0 +1,8 @@
+body {
+    background: url(../imagenes/cafe.webp) no-repeat center fixed;
+    background-size: cover;
+}
+#imagenes {
+    display:flex;
+    justify-content: center;
+}
