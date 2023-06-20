@@ -9,13 +9,13 @@ nuevaTarea.addEventListener("onclick", agregar);
 // FUNCIONES
 function agregar() {
     const nuevaLista = nuevaTarea.value
-    const newElement = document.createElement("li");
-    newElement.textContent = `${nuevaLista}`;
-    lista.appendChild(newElement);
-    nuevaTarea.value = "";
-
+    if (nuevaLista != null && nuevaLista != "") {
+        const newElement = document.createElement("li");
+        newElement.textContent = `${nuevaLista}`;
+        lista.appendChild(newElement);
+        nuevaTarea.value = "";
+    }
 }
-
 //nuevaLista toma el valor ingresado, se crea un element "li"
 //ese nuevo elemento tiene el valor ingresado en "nuevaLista"
 //appendChild va agregando ese elemento dejando el campo en blanco para volver a ingresar otra tarea.

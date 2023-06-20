@@ -6,10 +6,12 @@ nuevaTarea.addEventListener("onclick", agregar);
 // FUNCIONES
 function agregar() {
     var nuevaLista = nuevaTarea.value;
-    var newElement = document.createElement("li");
-    newElement.textContent = "".concat(nuevaLista);
-    lista.appendChild(newElement);
-    nuevaTarea.value = "";
+    if (nuevaLista != null && nuevaLista != "") {
+        var newElement = document.createElement("li");
+        newElement.textContent = "".concat(nuevaLista);
+        lista.appendChild(newElement);
+        nuevaTarea.value = "";
+    }
 }
 //nuevaLista toma el valor ingresado, se crea un element "li"
 //ese nuevo elemento tiene el valor ingresado en "nuevaLista"
