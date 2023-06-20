@@ -1,14 +1,16 @@
 body {
-    background: url(../imagenes/cafe.webp) no-repeat center fixed;
+    background: url(../imagenes/cafe.webp) no-repeat center fixed;/*para que no se repita*/
     background-size: cover;
 }
 form {
     display: inline-block;
     color: white;
-    background-color: rgba(0, 0, 255, 0.577);
+    background-color: rgba(0, 0, 255, 0.717);
     border-radius: 6px;
+    justify-content: space-between;
     margin: 10px 10px;
     padding: 8px 8px;
+    width: 98%;
 }
 a {
     display: inline-block;
