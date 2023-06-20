@@ -14,7 +14,7 @@
     <title>Login</title>
 </head>
 
-<body>
+<body> <!--estilo con Bootstrap-->
     <div id="formulario" class="col-6 text-center text-white bg-primary p-2 m-5 rounded-5">FORMULARIO DE INGRESO</div>
     <form class="boo col-3">
 
@@ -25,7 +25,7 @@
         <input id="apellido" type="text" name="apellido" placeholder="Ingrese apellido" size="12" required>
 
         <label for="email">EMAIL</label>
-        <input type="email" id="email" placeholder="Ingrese correo">
+        <input type="email" id="email" placeholder="Ingrese correo" required>
 
         <label for="usuario">USUARIO</label>
         <input id="usuario" type="text" name="usuario" placeholder="Nombre de usuario" size="14" required>
@@ -34,7 +34,8 @@
         <input id="contraseña" type="password" placeholder="Ingrese contraseña">
 
     </form>
-    <a href="./tareas.html" type="submit" id="boton"  class="btn col-3 offset-3 bg-success text-white" onclick="confirmar(event)">confirmar</a>
+        <a href="./tareas.html" type="submit" id="boton" class="btn col-3 offset-3 bg-success text-white"
+            onclick="confirmar(event)">confirmar</a>
 
 
 
