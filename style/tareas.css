@@ -35,7 +35,7 @@ a:hover {
     border-radius: 8px;
     margin: auto;
 }
-@keyframes color-change {
+@keyframes color-change { /*efecto parpadeante*/
         0% {
                 background-color: rgb(255, 68, 0);
             }
@@ -48,7 +48,7 @@ a:hover {
                 background-color: red;
             }
 }
-.titulo { /* en cada h2 para que todos los art. tengan el mismo estilo*/
+.titulo { /* Inicio la clase en cada h2 para que todos los art. tengan el mismo estilo*/
     display: flex;
     justify-content: center;
     color:white;
