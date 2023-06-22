@@ -12,8 +12,8 @@ function agregar() {
     if (nuevaLista != null && nuevaLista != "") {
         const newElement = document.createElement("li");// Se crea un element "li"
         newElement.textContent = `${nuevaLista}`;//Ese nuevo elemento tiene el valor ingresado en "nuevaLista"
-        lista.appendChild(newElement);
-        nuevaTarea.value = "";//appendChild va agregando ese elemento dejando el campo en blanco para volver a ingresar otra tarea.
+        lista.appendChild(newElement);//appendChild va agregando ese elemento.
+        nuevaTarea.value = ""; //Dejando el campo en blanco para volver a ingresar otra tarea.
 
     } 
 }
