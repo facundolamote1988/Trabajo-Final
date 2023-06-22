@@ -1,5 +1,3 @@
-
-
 function confirmar(event: Event) {
     let nombre: string = (<HTMLInputElement>document.getElementById("nombre completo")).value;
     let apellido: string = (<HTMLInputElement>document.getElementById("apellido")).value;
