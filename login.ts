@@ -9,6 +9,6 @@ function confirmar(event: Event) {
     console.log(nombre, apellido, email, usuario, contraseña);
     if (nombre === "" || apellido === "" || email === "" || usuario === "" || contraseña === "") {
         event.preventDefault();
-        alert("Debes llenar todos los campos");
-    }
+        swal("HAY CAMPOS INCOMPLETOS","Debes llenar todos los campos","error");
+    }  //SWAL app que da estilo al alert "sweet alert"
 }

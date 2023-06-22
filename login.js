@@ -1,5 +1,4 @@
-//FUNCION QUE CONFIRMA ACCESO Y PASA AL GESTOR DE TAREAS. (captura los datos x consola)
-function confirmar(event) { //EVENT.PREVENT,NO DEJA ACCESDER SIN TODOS LOS CAMPOS COMPLETADOS.
+function confirmar(event) {
     var nombre = document.getElementById("nombre completo").value;
     var apellido = document.getElementById("apellido").value;
     var email = document.getElementById("email").value;
@@ -8,6 +7,6 @@ function confirmar(event) { //EVENT.PREVENT,NO DEJA ACCESDER SIN TODOS LOS CAMPO
     console.log(nombre, apellido, email, usuario, contraseña);
     if (nombre === "" || apellido === "" || email === "" || usuario === "" || contraseña === "") {
         event.preventDefault();
-        alert("Debes llenar todos los campos");
-    }
+        swal("HAY CAMPOS INCOMPLETOS", "Debes llenar todos los campos", "error");
+    } //SWAL app que da estilo al alert "sweet alert"
 }
