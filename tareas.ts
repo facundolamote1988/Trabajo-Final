@@ -17,6 +17,8 @@ function agregar() {
 
     } 
 }
-
+/*La condicion != null verifica si la variable "nuevaLista" no es nula y no esta vacia al mismo tiempo.
+Si "nuevaLista" tiene un valor distinto,la condicion es verdadera
+!="" verifica que la variable no esta vacia*/
 
 
